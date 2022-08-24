@@ -4,7 +4,8 @@
   "description": "demo project for my tailwind article",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss build -i src/input.css -o dist/output.css",
+    "watch": "tailwind build -i src/style.css -o dist/style.css --watch"
   },
   "author": "aahil",
   "license": "ISC",
