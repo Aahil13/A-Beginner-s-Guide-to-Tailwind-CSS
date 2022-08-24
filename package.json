@@ -4,8 +4,8 @@
   "description": "demo project for my tailwind article",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss build -i src/input.css -o dist/output.css",
-    "watch": "tailwind build -i src/style.css -o dist/style.css --watch"
+    "build": "tailwindcss -i src/input.css -o dist/output.css",
+    "watch": "tailwindcss -i src/input.css -o dist/output.css --watch"
   },
   "author": "aahil",
   "license": "ISC",
