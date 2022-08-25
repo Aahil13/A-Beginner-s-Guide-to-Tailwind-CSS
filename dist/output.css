@@ -410,6 +410,10 @@ video {
   height: auto;
 }
 
+body {
+  margin: 1rem;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -551,14 +555,43 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.grid {
+.bg-White {
+  --tw-bg-opacity: 1 !important;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity)) !important;
+}
+
+.bg-Yellow {
+  --tw-bg-opacity: 1 !important;
+  background-color: hsl(51 100% 49% / var(--tw-bg-opacity)) !important;
+}
+
+.bg-DarkCyan {
+  --tw-bg-opacity: 1 !important;
+  background-color: hsl(167 40% 24% / var(--tw-bg-opacity)) !important;
+}
+
+.bg-DarkBlue {
+  --tw-bg-opacity: 1 !important;
+  background-color: hsl(198 62% 26% / var(--tw-bg-opacity)) !important;
+}
+
+.bg-moderateCyan {
+  --tw-bg-opacity: 1 !important;
+  background-color: hsl(168 34% 41% / var(--tw-bg-opacity)) !important;
+}
+
+.bg-SoftRed {
+  --tw-bg-opacity: 1 !important;
+  background-color: hsl(7 99% 70% / var(--tw-bg-opacity)) !important;
+}
+
+.main-grid {
   display: grid;
-}
-
-.grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
+.sub-grids {
+  height: 15rem;
+  width: 100%;
 }
